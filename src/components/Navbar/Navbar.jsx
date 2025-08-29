@@ -50,7 +50,7 @@ const Navbar = () => {
           <span className="text-[#8245ec]">&gt;</span>
         </div>
         {/*Desktop Menu*/}
-        <ul className="md:flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex space-x-8 text-gray-300">
           {menuItems.map((item) => {
             return (
               <li
@@ -70,6 +70,10 @@ const Navbar = () => {
             );
           })}
         </ul>
+        {/* Social Media icons */}
+        <div className="hidden md:flex space-x-4">
+          <a href=""></a>
+        </div>
       </div>
     </nav>
   );
