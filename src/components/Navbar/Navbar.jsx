@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWindowClose } from "react-icons/fa";
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState(false);
+  // Below useState is for when in mobile version clicked on a menu item then the menu will get close i.e. isOpen will become false
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  // Check scroll and change navbar background
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // here setIsOpen is also working like smooth scroll function
   const handleMenuItemClick = (itemId) => {
     setActiveSection(itemId);
+    setIsOpen(false);
   };
 
   const menuItems = [
@@ -18,7 +33,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-transparent">
+    <nav
+      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
+        isScrolled
+          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+          : "bg-transparent"
+      }`}
+    >
       <div className="text-white py-5 flex justify-between items-center">
         {/*Logo */}
         <div className="text-lg font-semibold curson-pointer">
