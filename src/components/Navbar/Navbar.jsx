@@ -72,7 +72,41 @@ const Navbar = () => {
         </ul>
         {/* Social Media icons */}
         <div className="hidden md:flex space-x-4">
-          <a href=""></a>
+          <a
+            href="https://github.com/JySagar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaGithub size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jysagar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaLinkedin size={24} />
+          </a>
+        </div>
+
+        {/* Mobile Menu Icons */}
+        <div className="md:hidden">
+          {isOpen ? (
+            <FiX
+              className="text-3xl text-[#8245ec] curson-pointer"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            />
+          ) : (
+            <FiMenu
+              className="text-3xl text-[#8345ec] curson-pointer"
+              onClick={() => {
+                setIsOpen(true);
+              }}
+            />
+          )}
         </div>
       </div>
     </nav>
