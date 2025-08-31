@@ -28,6 +28,10 @@ BlurBlob.propTypes = {
     top: PropTypes.string,
     left: PropTypes.string,
   }),
+  size: PropTypes.shape({
+    width: PropTypes.string,
+    height: PropTypes.string,
+  }),
 };
 
 export default BlurBlob;
