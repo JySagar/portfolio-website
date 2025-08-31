@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const BlurBlob = ({ position, size }) => {
   // Deconstruct position and size
@@ -19,6 +20,14 @@ const BlurBlob = ({ position, size }) => {
       <div className="w-full h-full bg-purple-500 rounded-full opacity-20 blur-3xl animate-blob"></div>
     </div>
   );
+};
+
+// Define Prop Types
+BlurBlob.propTypes = {
+  position: PropTypes.shape({
+    top: PropTypes.string,
+    left: PropTypes.string,
+  }),
 };
 
 export default BlurBlob;
