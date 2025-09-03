@@ -17,6 +17,7 @@ const Skills = () => {
         </p>
       </div>
       {/* Skills Categories */}
+      <div>{}</div>
     </section>
   );
 };
