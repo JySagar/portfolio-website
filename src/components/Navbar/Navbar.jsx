@@ -22,6 +22,12 @@ const Navbar = () => {
   const handleMenuItemClick = (itemId) => {
     setActiveSection(itemId);
     setIsOpen(false);
+
+    // Scroll to the section
+    const element = document.getElementById(itemId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   const menuItems = [
