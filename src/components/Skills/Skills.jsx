@@ -17,6 +17,7 @@ const Skills = () => {
           various projects and experiences
         </p>
       </div>
+
       {/* Skills Categories */}
       <div className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between">
         {SkillsInfo.map((category) => (
@@ -27,9 +28,9 @@ const Skills = () => {
             <h3 className="text-2xl sm:text-3xl font-semibold text-gray-400 mb-4 text-center">
               {category.title}
             </h3>
-            {/* Skill Items - 3 per row on larger screens */}
+
+            {/* Skill Items */}
             <Tilt
-              className=""
               tiltMaxAngleX={20}
               tiltMaxAngleY={20}
               perspective={1000}
