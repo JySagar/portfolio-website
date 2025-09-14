@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-[#050414]"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -36,6 +36,25 @@ const Experience = () => {
                   alt={experience.company}
                   className="w-full h-full object-cover rounded-full"
                 />
+              </div>
+              {/* Content Section */}
+              <div
+                className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]
+                ${
+                  index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
+                } sm:ml-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
+              >
+                {/* Flex container for image and text */}
+                <div className="flex items-center space-x-6">
+                  {/* Company logo */}
+                  <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+                    <img
+                      className="w-full h-full object-cover"
+                      src={experience.img}
+                      alt={experience.company}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           ))}
