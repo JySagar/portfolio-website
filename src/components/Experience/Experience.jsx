@@ -45,8 +45,9 @@ const Experience = () => {
                 index % 2 === 0 ? "sm:mr-20 sm:ml-0" : "sm:ml-20 sm:mr-0"
               } mt-12 sm:mt-0`}
             >
-              {/* Header */}
-              <div className="flex items-center space-x-4 mb-4">
+              {/* Header | Felx container for image and text */}
+              <div className="flex items-center space-x-6">
+                {/* Company Logo */}
                 <div className="w-14 h-14 bg-white rounded-md overflow-hidden">
                   <img
                     className="w-full h-full object-cover"
@@ -54,19 +55,36 @@ const Experience = () => {
                     alt={experience.company}
                   />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">
-                    {experience.role}
-                  </h3>
-                  <p className="text-purple-400 font-semibold">
-                    {experience.company}
+                {/* Role, Company name and Date */}
+                <div className="flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                      {experience.role}
+                    </h3>
+                    <h4 className="text-md sm:text-sm text-gray-300">
+                      {experience.company}
+                    </h4>
+                  </div>
+                  {/* Date */}
+                  <p className="text-sm text-gray-500 mt-2">
+                    {experience.date}
                   </p>
                 </div>
               </div>
-
-              {/* Duration & Description */}
-              <p className="text-gray-400 text-sm">{experience.duration}</p>
-              <p className="text-gray-300 mt-4">{experience.description}</p>
+              <p className="mt-4 text-gray-400">{experience.desc}</p>
+              <div className="mt-4">
+                <h5 className="font-medium text-white">Skills:</h5>
+                <ul className="flex flex-wrap mt-2">
+                  {experience.skills.map((skill, index) => (
+                    <li
+                      key={index}
+                      className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border-gray-400"
+                    >
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         ))}
