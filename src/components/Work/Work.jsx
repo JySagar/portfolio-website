@@ -53,16 +53,6 @@ const Work = () => {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-4">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-1/2 bg-"
-                >
-                  View Code
-                </a>
-              </div>
             </div>
           </div>
         ))}
