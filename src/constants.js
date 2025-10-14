@@ -37,11 +37,16 @@ import csharpLogo from "./assets/tech_logo/csharp.png";
 import webverseLogo from "./assets/company_logo/webverse_logo.png";
 import agcLogo from "./assets/company_logo/agc_logo.png";
 import newtonschoolLogo from "./assets/company_logo/newtonschool_logo.png";
+import skybeenLogo from "./assets/work_logo/skybeenLogo.png";
+import nehuLogo from "./assets/work_logo/nehuLogo.png";
+import ioclLogo from "./assets/work_logo/ioclLogo.png";
 
 // Education Section Logo's
 import glaLogo from "./assets/education_logo/gla_logo.png";
 import bsaLogo from "./assets/education_logo/bsa_logo.png";
 import vpsLogo from "./assets/education_logo/vps_logo.png";
+import memhsLogo from "./assets/education_logo/memhsLogo.jpg";
+import lasLogo from "./assets/education_logo/lasLogo.jpeg";
 
 // Project Section Logo's
 import githubdetLogo from "./assets/work_logo/github_det.png";
@@ -114,48 +119,47 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
-    img: webverseLogo,
-    role: "Fullstack Developer",
-    company: "Webverse Digital",
-    date: "April 2024 - Present",
-    desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+    img: skybeenLogo,
+    role: "Frontend Developer",
+    company: "Skybeen – AI-Powered Educational Platform",
+    date: "Jan 2025 – Present",
+    desc: "Developed the complete frontend ecosystem, including the main website, admin panel, and student dashboard for an AI-powered educational platform. Designed and implemented a responsive, user-friendly interface using React.js and Tailwind CSS. Integrated secure authentication, content management, and exam monitoring features to streamline operations for students and administrators.",
+    skills: [
+      "ReactJS",
+      "Tailwind CSS",
+      "JavaScript",
+      "Vite",
+      "REST API",
+      "Git",
+    ],
+  },
+
+  {
+    id: 1,
+    img: nehuLogo,
+    role: "IT Specialist, Technical Group",
+    company: "North-Eastern Hill University",
+    date: "August 2023 - August 2024",
+    desc: "Worked full-time under the Technical Group at North-Eastern Hill University, contributing to the design, development, and maintenance of multiple web-based applications for academic and administrative use. Collaborated with cross-functional teams to ensure seamless integration between frontend interfaces and backend systems. Additionally managed deployment, updates, and server operations in Linux environments to maintain high availability and performance.",
     skills: [
       "HTML",
       "CSS",
       "JavaScript",
       "React JS",
-      "TypeScript",
       "Node JS",
-      "Tailwind CSS",
-      "MongoDb",
-      "Redux",
-      " Next Js",
+      "Express JS",
+      "MongoDB",
+      "Linux Server Management",
     ],
   },
-  {
-    id: 1,
-    img: agcLogo,
-    role: "Fullstack Engineer",
-    company: "Agumentik Group of Companies",
-    date: "July 2023 - March 2024",
-    desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "JavaScript",
-      "Tailwind CSS",
-      "HTML",
-      "CSS",
-      "SQL",
-    ],
-  },
+
   {
     id: 2,
-    img: newtonschoolLogo, // replace with your IOCL logo variable
+    img: ioclLogo,
     role: "Machine Learning & Frontend Intern",
     company: "Indian Oil Corporation Limited",
     date: "December 2023 - January 2024",
-    desc: "Completed a one-month internship at Indian Oil Corporation Limited, Guwahati Refinery, where I worked on the project 'Minutes of Meeting'. The system automated the process of transcribing online meetings (Zoom/Google Meet) using machine learning. Audio recordings were processed and converted into structured text transcripts with key highlights. Additionally, developed a React-based frontend interface that displayed transcript summaries, meeting insights, and participant details for easy review and documentation.",
+    desc: "Completed a project at Indian Oil Corporation Limited, Guwahati Refinery, where I worked on the project 'Minutes of Meeting'. The system automated the process of transcribing online meetings (Zoom/Google Meet) using machine learning. Audio recordings were processed and converted into structured text transcripts with key highlights. Additionally, developed a React-based frontend interface that displayed transcript summaries, meeting insights, and participant details for easy review and documentation.",
     skills: [
       "Python",
       "Machine Learning",
@@ -170,40 +174,40 @@ export const experiences = [
 ];
 
 export const education = [
-  {
-    id: 0,
-    img: glaLogo,
-    school: "GLA University, Mathura",
-    date: "Sept 2022 - July 2024",
-    grade: "7.81 CGPA",
-    desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-    degree: "Master of Computer Applications - MCA",
-  },
+  //   {
+  //     id: 0,
+  //     img: glaLogo,
+  //     school: "GLA University, Mathura",
+  //     date: "Sept 2022 - July 2024",
+  //     grade: "7.81 CGPA",
+  //     desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
+  //     degree: "Master of Computer Applications - MCA",
+  //   },
   {
     id: 1,
-    img: bsaLogo,
-    school: "BSA College, Mathura",
-    date: "Sept 2018 - Aug 2021",
-    grade: "73.2%",
-    desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-    degree: "Bachelor of Science - BSC (Computer Science)",
+    img: nehuLogo,
+    school: "North-Eastern Hill University, Meghalaya",
+    date: "Sept 2020 - Aug 2024",
+    grade: "8.5 CPI",
+    desc: "I completed my Bachelor's degree in Information Technology (B.Tech) from North-Eastern Hill University, Meghalaya. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at B.Tech in college allowed me to work on projects that applied theoretical concepts to real-world problems.",
+    degree: "Bachelor of Technology - B.Tech (Information Techonology)",
   },
   {
     id: 2,
-    img: vpsLogo,
-    school: "Vatsalya Public School Govardhan, Mathura",
+    img: lasLogo,
+    school: "Louisberg Higher Secondary, Assam",
     date: "Apr 2017 - March 2018",
-    grade: "78%",
-    desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-    degree: "CBSE(XII) - PCM with Computer Science",
+    grade: "60.2%",
+    desc: "I completed my class 12 education from Louisberg Higher Secondary, Assam, under the SEBA board, where I studied Physics, Chemistry, and Mathematics.",
+    degree: "CBSE(XII) - PCM",
   },
   {
     id: 3,
-    img: vpsLogo,
-    school: "Vatsalya Public School Govardhan, Mathura",
+    img: memhsLogo,
+    school: "Modern English Medium High School, Assam",
     date: "Apr 2015 - March 2016",
-    grade: "87.5%",
-    desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
+    grade: "8.4 CGPA%",
+    desc: "I completed my class 10 education from Modern English Medium High School, Assam, under the CBSE board, where I studied Science with Computer.",
     degree: "CBSE(X), Science with Computer Application",
   },
 ];
