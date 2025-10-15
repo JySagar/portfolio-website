@@ -46,10 +46,22 @@ const Footer = () => {
               icon: <FaFacebook />,
               link: "https://www.facebook.com/share/1HTkZvdzG7/",
             },
-            { icon: <FaTwitter />, link: "" },
-            { icon: <FaLinkedin />, link: "" },
-            { icon: <FaInstagram />, link: "" },
-            { icon: <FaYoutube />, link: "" },
+            {
+              icon: <FaTwitter />,
+              link: "https://x.com/JySagar69?t=2C9mk4l3dPQmBWRd9JC_2A&s=08",
+            },
+            {
+              icon: <FaLinkedin />,
+              link: "https://www.linkedin.com/in/jysagar",
+            },
+            {
+              icon: <FaInstagram />,
+              link: "https://www.instagram.com/jy.sagar?igsh=MTFzcWRnMThucmlyeQ==",
+            },
+            {
+              icon: <FaYoutube />,
+              link: "https://youtube.com/@sagarjyotidas69?si=4hcs9-2bzyuy0USp",
+            },
           ].map((item, index) => (
             <a
               key={index}
